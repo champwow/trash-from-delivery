@@ -1,0 +1,76 @@
+
+.tcontainer {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lastp1reciept {
+    color: red;
+    text-shadow: 2px 2px 3px #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+}
+
+.lastp2reciept {
+    color: red;
+    text-shadow: 2px 2px 3px #ffffff;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.lastp3reciept {
+    color: red;
+    text-shadow: 2px 2px 3px #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+#condi-but2 {
+    width: 60px;
+    height: 60px;
+    top: 60vh;
+    left: 20vh;
+    /* background-color: red; */
+    position: absolute;
+}
+
+.setreceipt[data-scene="0"] .lastp1reciept {
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.setreceipt[data-scene="1"] .lastp1reciept {
+    transition: 0.7s;
+    opacity: 1;
+}
+
+.setreceipt[data-scene="0"] .lastp2reciept {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.setreceipt[data-scene="1"] .lastp2reciept {
+    transition: 0.7s;
+    transition-delay: 0.7s;
+    opacity: 1;
+}
+
+.setreceipt[data-scene="0"] .lastp3reciept {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.setreceipt[data-scene="1"] .lastp3reciept {
+    transition: 0.7s;
+    transition-delay: 1.4s;
+    opacity: 1;
+}

@@ -1,0 +1,412 @@
+.country[data-show="koria"] .infokoria {
+    display: grid;
+    animation: showw .3s;
+}
+
+.country[data-show="sing"] .infosing {
+    display: grid;
+    animation: showw .3s;
+}
+
+.country2[data-show="thai"] .infothai {
+    display: grid;
+    animation: showw .3s;
+}
+
+.country[data-show="stat1"] .infokoria {
+    animation: showback .3s;
+    animation-fill-mode: forwards;
+    display: grid;
+}
+
+.country[data-show="stat1"] .infosing {
+    animation: showback .3s;
+    animation-fill-mode: forwards;
+    display: grid;
+}
+
+.country2[data-show="stat1"] .infothai {
+    animation: showback .3s;
+    animation-fill-mode: forwards;
+    display: grid;
+}
+
+.infokoria {
+    position: absolute;
+    background-color: black;
+    /* height: 950px; */
+    width: 100%;
+    /* left: 120%; */
+    /* top: 400vh; */
+    transition: all 0.5s;
+    z-index: 3;
+    display: none;
+}
+
+.infosing {
+    position: absolute;
+    background-color: black;
+    height: 950px;
+    width: 100%;
+    /* left: 120%; */
+    /* top: 400vh; */
+    transition: all 0.5s;
+    z-index: 3;
+    display: none;
+}
+
+.infothai {
+    position: absolute;
+    background-color: black;
+    height: 950px;
+    width: 100%;
+    margin-left: 3vw;
+    /* left: 120%; */
+    /* top: 400vh; */
+    transition: all 0.5s;
+    z-index: 3;
+    display: none;
+    bottom:0px;
+}
+
+@keyframes showw {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes showback {
+    0% {
+        display: grid;
+        transform: translateX(0%);
+    }
+    99% {
+        display: grid;
+        transform: translateX(100%);
+    }
+    100% {
+        display: none;
+        transform: translateX(100%);
+    }
+}
+
+#back_country {
+    margin-top: 60px;
+}
+
+#back_country2 {
+    margin-top: 60px;
+}
+
+@media (min-width: 0px) {
+    #imgkoria {
+        display: none;
+    }
+    #imgthai {
+        display: none;
+    }
+    #imgsing {
+        display: none;
+    }
+    #textkoria1 {
+        display: none;
+    }
+    .main-but {
+        padding-top: 30%;
+        font-size: 100px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 80%;
+    }
+    #imgtomyum {
+        width: 200px;
+    }
+    #ctfood {
+        width: 200px;
+    }
+    #buttonsing {
+        margin-left: 3vh;
+        margin-top: 20px;
+    }
+    #buttonkoria {
+        margin-left: 3vh;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 30vw;
+        height: 6vh;
+        font-weight: 700;
+        font-size: 2.2vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 1000px;
+    }
+    .infosing {
+        height: 1000px;
+    }
+}
+
+@media (min-width:375px) {
+    .main-but {
+        padding-top: 20%;
+        font-size: 130px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 100%;
+    }
+    #imgtomyum {
+        width: 300px;
+    }
+    #ctfood {
+        width: 300px;
+    }
+    #buttonsing {
+        margin-left: 3vh;
+        margin-top: 20px;
+    }
+    #buttonkoria {
+        margin-left: 3vh;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 32vw;
+        height: 6vh;
+        font-weight: 700;
+        font-size: 1.8vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 1000px;
+    }
+    .infosing {
+        height: 1000px;
+    }
+}
+
+@media(min-width: 576px) {
+    .main-but {
+        padding-top: 20%;
+        font-size: 140px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 100%;
+    }
+    #imgtomyum {
+        width: 300px;
+    }
+    #ctfood {
+        width: 300px;
+    }
+    #buttonsing {
+        margin-top: 20px;
+        margin-left: 3vh;
+    }
+    #buttonkoria {
+        margin-left: 3vh;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 25vw;
+        height: 6vh;
+        font-weight: 700;
+        font-size: 2.2vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 1000px;
+    }
+    .infosing {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-but {
+        font-size: 140px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 76px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 100%;
+    }
+    #imgtomyum {
+        width: 400px;
+    }
+    #ctfood {
+        width: 400px;
+    }
+    #imgsing {
+        width: 400px;
+    }
+    #imgkoria {
+        width: 400px;
+    }
+    #buttonsing {
+        margin-top: 20px;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 21vw;
+        height: 7vh;
+        font-weight: 700;
+        font-size: 2.5vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 950px;
+    }
+    .infosing {
+        height: 950px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-but {
+        padding-top: 10%;
+        font-size: 200px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 96px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 100%;
+    }
+    #condi-but {
+        width: 60px;
+        height: 60px;
+        top: 80vh;
+        left: 20vh;
+        /* background-color: red; */
+        position: absolute;
+    }
+    #imgtomyum {
+        width: 500px;
+    }
+    #ctfood {
+        width: 400px;
+    }
+    #imgsing {
+        width: 400px;
+    }
+    #imgkoria {
+        width: 400px;
+    }
+    #buttonsing {
+        margin-top: 20px;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 18vw;
+        height: 6vh;
+        font-weight: 700;
+        font-size: 2.5vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 950px;
+    }
+    .infosing {
+        height: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #imgsing {
+        width: 500px;
+    }
+    .main-but {
+        font-size: 200px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sec-but {
+        font-size: 96px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .test {
+        width: 100%;
+    }
+    #condi-but {
+        width: 60px;
+        height: 60px;
+        top: 95vh;
+        left: 20vh;
+        /* background-color: bac; */
+        position: absolute;
+    }
+    #imgtomyum {
+        width: 500px;
+    }
+    #imgkoria {
+        width: 500px;
+    }
+    #buttonsing {
+        margin-top: 20px;
+    }
+    .bigbtn {
+        margin: 15px;
+        width: 11vw;
+        height: 5vh;
+        font-weight: 700;
+        font-size: 2.1vh;
+        border-radius: 10px;
+    }
+    .infokoria {
+        height: 950px;
+    }
+    .infosing {
+        height: 950px;
+    }
+
+    .row_padding{
+        margin-bottom:15%;
+    }
+}
+
+.end-footer {
+    padding-bottom: 20%;
+}
+
+.test{
+    width:100%;
+}
+
+.top-header{
+    text-align: center;
+    padding-top: 7vh;
+}
